@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Reproducción Humana - Biología</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        bio: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .svg-container { display: flex; justify-content: center; align-items: center; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-bio-200 selection:text-bio-900">
+
+    <!-- Header / Encabezado Escolar -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex flex-wrap justify-between items-center gap-4">
+            <div class="flex items-center space-x-3">
+                <div class="p-2 bg-bio-100 text-bio-700 rounded-lg">
+                    <i class="fa-solid fa-dna text-xl"></i>
+                </div>
+                <div>
+                    <h1 class="font-bold text-lg text-slate-900 tracking-tight leading-tight">BIOLOGÍA Y CIENCIAS NATURALES</h1>
+                    <p class="text-xs text-slate-500">Unidad 3: La reproducción en los seres humanos</p>
+                </div>
+            </div>
+            
+            <div class="flex items-center space-x-4 text-sm">
+                <div class="bg-bio-50 border border-bio-200 px-4 py-1.5 rounded-full text-bio-900 font-medium flex items-center space-x-2">
+                    <i class="fa-solid fa-chalkboard-user text-bio-600"></i>
+                    <span>Profesor: <strong>Ricardo Naín</strong></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="bg-gradient-to-r from-bio-900 via-bio-800 to-slate-900 text-white py-14 px-4">
+        <div class="max-w-4xl mx-auto text-center space-y-4">
+            <span class="inline-block px-3 py-1 bg-bio-500/20 text-bio-300 rounded-full text-xs font-semibold uppercase tracking-wider border border-bio-500/30">
+                Capítulo 7 • Contenido Escolar
+            </span>
+            <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight">
+                La Reproducción Humana y la Sexualidad
+            </h2>
+            <p class="text-slate-300 text-base md:text-lg max-w-2xl mx-auto font-light">
+                Un recorrido completo por los aspectos evolutivos, anatómicos, fisiológicos, reproductivos y de salud integral del ser humano.
+            </p>
+        </div>
+    </section>
+
+    <!-- Navegación Rápida -->
+    <div class="bg-white border-b border-slate-200 shadow-sm sticky top-[61px] z-40 overflow-x-auto">
+        <div class="max-w-7xl mx-auto px-4 flex space-x-6 text-sm font-medium whitespace-nowrap py-3">
+            <a href="#evolucion" class="text-slate-600 hover:text-bio-600 transition-colors flex items-center gap-1.5"><i class="fa-solid fa-tree text-xs"></i><span>1. Evolución</span></a>
+            <a href="#sistema-masculino" class="text-slate-600 hover:text-bio-600 transition-colors flex items-center gap-1.5"><i class="fa-solid fa-mars text-xs"></i><span>2. Sist. Masculino</span></a>
+            <a href="#sistema-femenino" class="text-slate-600 hover:text-bio-600 transition-colors flex items-center gap-1.5"><i class="fa-solid fa-venus text-xs"></i><span>3. Sist. Femenino</span></a>
+            <a href="#ciclo-menstrual" class="text-slate-600 hover:text-bio-600 transition-colors flex items-center gap-1.5"><i class="fa-solid fa-rotate-right text-xs"></i><span>4. Ciclo Menstrual</span></a>
+            <a href="#embarazo-parto" class="text-slate-600 hover:text-bio-600 transition-colors flex items-center gap-1.5"><i class="fa-solid fa-baby text-xs"></i><span>5. Desarrollo y Parto</span></a>
+            <a href="#salud-its" class="text-slate-600 hover:text-bio-600 transition-colors flex items-center gap-1.5"><i class="fa-solid fa-shield-virus text-xs"></i><span>6. ITS y Salud</span></a>
+            <a href="#asistida" class="text-slate-600 hover:text-bio-600 transition-colors flex items-center gap-1.5"><i class="fa-solid fa-microscope text-xs"></i><span>7. Rep. Asistida</span></a>
+            <a href="#cuestionarios" class="text-bio-700 font-bold hover:text-bio-900 transition-colors flex items-center gap-1.5"><i class="fa-solid fa-list-check text-xs"></i><span>8. Cuestionarios</span></a>
+        </div>
+    </div>
+
+    <!-- Contenido Principal -->
+    <main class="max-w-5xl mx-auto px-4 py-12 space-y-16">
+
+        <!-- 1. Evolución y Pubertad -->
+        <section id="evolucion" class="scroll-mt-28 space-y-6">
+            <div class="border-b border-slate-200 pb-3">
+                <span class="text-bio-600 font-bold uppercase text-xs tracking-wider">Sección 1</span>
+                <h3 class="text-2xl font-bold text-slate-900">La Reproducción Humana y la Evolución</h3>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+                    <h4 class="font-bold text-slate-900 text-lg flex items-center gap-2">
+                        <i class="fa-solid fa-paw text-bio-600"></i> Clasificación Mamífera
+                    </h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Los seres humanos pertenecemos a la clase de los <strong>mamíferos placentarios</strong>, dentro del orden de los <strong>primates</strong> y la familia de los <strong>homínidos</strong> (junto a chimpancés, gorilas y bonobos).
+                    </p>
+                    <ul class="text-sm text-slate-600 space-y-2 list-disc list-inside">
+                        <li><strong>Fecundación interna</strong> y desarrollo vivíparo.</li>
+                        <li>Nutrición embrionaria mediante la <strong>placenta</strong>.</li>
+                        <li>Cuidado prolongado de las crías y alimentación por leche materna.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+                    <h4 class="font-bold text-slate-900 text-lg flex items-center gap-2">
+                        <i class="fa-solid fa-person-walking text-bio-600"></i> Adaptaciones Evolutivas
+                    </h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        El <strong>bipedestismo</strong> (caminar erguidos hace ~7 millones de años) modificó la pelvis humana, volviendo el <strong>canal de parto largo y estrecho</strong> en comparación con otros primates.
+                    </p>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Junto al aumento del volumen cerebral, la evolución causó que los humanos nazcan en un estadio de desarrollo temprano con huesos craneales no soldados.
+                    </p>
+                </div>
+            </div>
+
+            <!-- ILUSTRACIÓN 1: Pelvis y Canal de parto -->
+            <figure class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm text-center space-y-3">
+                <div class="svg-container bg-slate-50 p-4 rounded-xl overflow-x-auto">
+                    <svg viewBox="0 0 500 220" class="w-full min-w-[320px] max-w-md h-auto">
+                        <!-- Chimpancé Pelvis -->
+                        <g transform="translate(40, 30)">
+                            <!-- Canales -->
+                            <ellipse cx="80" cy="80" rx="45" ry="30" fill="none" stroke="#64748b" stroke-width="4"/>
+                            <circle cx="80" cy="80" r="22" fill="#94a3b8" opacity="0.6"/>
+                            <!-- Líneas de señalamiento -->
+                            <line x1="80" y1="50" x2="80" y2="20" stroke="#475569" stroke-width="1.5" stroke-dasharray="3,3"/>
+                            <circle cx="80" cy="20" r="3" fill="#475569"/>
+                            <line x1="80" y1="110" x2="80" y2="140" stroke="#475569" stroke-width="1.5" stroke-dasharray="3,3"/>
+                            <circle cx="80" cy="140" r="3" fill="#475569"/>
+                            <!-- Textos etiquetados -->
+                            <text x="80" y="12" text-anchor="middle" font-size="11" font-weight="bold" fill="#334155">Pelvis Chimpancé</text>
+                            <text x="80" y="160" text-anchor="middle" font-size="10" fill="#64748b">Canal amplio y directo</text>
+                        </g>
+
+                        <!-- Humano Pelvis -->
+                        <g transform="translate(260, 30)">
+                            <!-- Canales -->
+                            <ellipse cx="80" cy="80" rx="35" ry="42" fill="none" stroke="#16a34a" stroke-width="4"/>
+                            <circle cx="80" cy="80" r="28" fill="#22c55e" opacity="0.6"/>
+                            <!-- Líneas de señalamiento -->
+                            <line x1="80" y1="38" x2="80" y2="20" stroke="#15803d" stroke-width="1.5" stroke-dasharray="3,3"/>
+                            <circle cx="80" cy="20" r="3" fill="#15803d"/>
+                            <line x1="80" y1="122" x2="80" y2="140" stroke="#15803d" stroke-width="1.5" stroke-dasharray="3,3"/>
+                            <circle cx="80" cy="140" r="3" fill="#15803d"/>
+                            <!-- Textos etiquetados -->
+                            <text x="80" y="12" text-anchor="middle" font-size="11" font-weight="bold" fill="#14532d">Pelvis Humana</text>
+                            <text x="80" y="160" text-anchor="middle" font-size="10" font-weight="bold" fill="#16a34a">Canal estrecho</text>
+                            <text x="80" y="175" text-anchor="middle" font-size="9" fill="#475569">(Adaptación bípeda)</text>
+                        </g>
+                    </svg>
+                </div>
+                <figcaption class="text-xs text-slate-500 italic max-w-lg mx-auto">
+                    <strong>Figura 1. Comparación anatómica del canal de parto:</strong> En el ser humano la bipedestación estrechó el canal pelviano, haciendo que la cabeza del feto deba amoldarse durante el nacimiento.
+                </figcaption>
+            </figure>
+
+            <!-- Pubertad y Caracteres Sexuales -->
+            <div class="bg-bio-900 text-white p-6 md:p-8 rounded-2xl space-y-6 shadow-md">
+                <div>
+                    <h4 class="text-xl font-bold text-bio-300">Pubertad y Caracteres Sexuales</h4>
+                    <p class="text-slate-300 text-sm mt-1">
+                        Período (entre los 10 y 14 años aproximadamente) en el que las gónadas comienzan a producir gametos y hormonas (testosterona, estrógenos, progesterona).
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6 text-sm">
+                    <div class="bg-bio-800/60 p-4 rounded-xl border border-bio-700/50 space-y-2">
+                        <span class="font-bold text-bio-300 block text-base"><i class="fa-solid fa-venus mr-1"></i> Caracteres Femeninos</span>
+                        <ul class="space-y-1 text-slate-200">
+                            <li>• Desarrollo de las mamas y elevación de pezones.</li>
+                            <li>• Ensanchamiento de caderas y muslos.</li>
+                            <li>• Crecimiento del vello axilar y púbico.</li>
+                            <li>• Primera menstruación (<strong>menarca</strong>).</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-bio-800/60 p-4 rounded-xl border border-bio-700/50 space-y-2">
+                        <span class="font-bold text-bio-300 block text-base"><i class="fa-solid fa-mars mr-1"></i> Caracteres Masculinos</span>
+                        <ul class="space-y-1 text-slate-200">
+                            <li>• Crecimiento de genitales externos.</li>
+                            <li>• Ensanchamiento de hombros y desarrollo muscular.</li>
+                            <li>• Aparición del vello facial, tórax y pubis.</li>
+                            <li>• Voz más grave y primeras eyaculaciones.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Sistema Genital Masculino -->
+        <section id="sistema-masculino" class="scroll-mt-28 space-y-6">
+            <div class="border-b border-slate-200 pb-3">
+                <span class="text-bio-600 font-bold uppercase text-xs tracking-wider">Sección 2</span>
+                <h3 class="text-2xl font-bold text-slate-900">El Sistema Genital Masculino</h3>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="p-4 bg-slate-50 rounded-xl space-y-2">
+                        <strong class="text-slate-900 block text-sm">Testículos</strong>
+                        <p class="text-xs text-slate-600">Gónadas masculinas. Producen espermatozoides y la hormona <strong>testosterona</strong>.</p>
+                    </div>
+                    <div class="p-4 bg-slate-50 rounded-xl space-y-2">
+                        <strong class="text-slate-900 block text-sm">Escroto</strong>
+                        <p class="text-xs text-slate-600">Bolsa de piel que mantiene los testículos a menor temperatura (menos de 37 °C) para el desarrollo espermático.</p>
+                    </div>
+                    <div class="p-4 bg-slate-50 rounded-xl space-y-2">
+                        <strong class="text-slate-900 block text-sm">Pene y Uretra</strong>
+                        <p class="text-xs text-slate-600">Órgano eréctil recorrido por la uretra, conducto compartido con el sistema urinario.</p>
+                    </div>
+                </div>
+
+                <div class="p-4 border-l-4 border-bio-500 bg-bio-50 space-y-2">
+                    <h4 class="font-bold text-bio-900 text-sm">Espermatogénesis</h4>
+                    <p class="text-xs text-slate-700 leading-relaxed">
+                        Formación continua de espermatozoides en los <strong>túbulos seminíferos</strong>: Espermatogonia → Espermatocito Primario → Espermatocito Secundario → Espermátidas → Maduración en el <strong>Epidídimo</strong>. El líquido seminal aportado por la <em>próstata</em>, <em>vesículas seminales</em> y <em>glándulas de Cowper</em> nutre a los gametos.
+                    </p>
+                </div>
+            </div>
+
+            <!-- ILUSTRACIÓN 2: Espermatozoide Adaptativa (Sin cortes de texto) -->
+            <figure class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm text-center space-y-4">
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                    <!-- Gráfico Espermatozoide Limpio -->
+                    <div class="svg-container py-2">
+                        <svg viewBox="0 0 450 100" class="w-full max-w-lg h-auto">
+                            <!-- Cabeza -->
+                            <path d="M 40 50 C 40 20, 100 20, 115 50 C 100 80, 40 80, 40 50 Z" fill="#dcfce7" stroke="#16a34a" stroke-width="3"/>
+                            <circle cx="70" cy="50" r="14" fill="#15803d"/>
+                            <text x="70" y="54" text-anchor="middle" font-size="9" fill="#ffffff" font-weight="bold">ADN</text>
+                            
+                            <!-- Pieza intermedia / Mitocondrias -->
+                            <rect x="115" y="40" width="35" height="20" rx="4" fill="#fde047" stroke="#ca8a04" stroke-width="2"/>
+                            
+                            <!-- Flagelo / Cola -->
+                            <path d="M 150 50 Q 230 20, 310 50 T 430 50" fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+
+                    <!-- Leyendas Desglosadas Responsivas en Tarjetas (Nunca se cortan) -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-left mt-3 pt-3 border-t border-slate-200">
+                        <div class="bg-white p-3 rounded-xl border border-emerald-200 shadow-2xs">
+                            <div class="flex items-center gap-1.5 text-emerald-800 font-bold text-xs mb-1">
+                                <span class="w-2.5 h-2.5 rounded-full bg-emerald-600 inline-block"></span>
+                                1. Cabeza
+                            </div>
+                            <p class="text-[11px] text-slate-600 leading-tight">Contiene el núcleo con el material hereditario (ADN).</p>
+                        </div>
+
+                        <div class="bg-white p-3 rounded-xl border border-amber-200 shadow-2xs">
+                            <div class="flex items-center gap-1.5 text-amber-800 font-bold text-xs mb-1">
+                                <span class="w-2.5 h-2.5 rounded-full bg-amber-500 inline-block"></span>
+                                2. Pieza Intermedia
+                            </div>
+                            <p class="text-[11px] text-slate-600 leading-tight">Repleta de <strong>mitocondrias</strong> que aportan la energía para el movimiento.</p>
+                        </div>
+
+                        <div class="bg-white p-3 rounded-xl border border-blue-200 shadow-2xs">
+                            <div class="flex items-center gap-1.5 text-blue-800 font-bold text-xs mb-1">
+                                <span class="w-2.5 h-2.5 rounded-full bg-blue-600 inline-block"></span>
+                                3. Cola (Flagelo)
+                            </div>
+                            <p class="text-[11px] text-slate-600 leading-tight">Estructura móvil que le permite nadar hasta el óvulo.</p>
+                        </div>
+                    </div>
+                </div>
+                <figcaption class="text-xs text-slate-500 italic max-w-lg mx-auto">
+                    <strong>Figura 2. Estructura de un espermatozoide:</strong> Muestra la distribución de la cabeza (ADN), la zona intermedia energética (mitocondrias) y la cola móvil para nadar hacia el óvulo.
+                </figcaption>
+            </figure>
+        </section>
+
+        <!-- 3. Sistema Genital Femenino -->
+        <section id="sistema-femenino" class="scroll-mt-28 space-y-6">
+            <div class="border-b border-slate-200 pb-3">
+                <span class="text-bio-600 font-bold uppercase text-xs tracking-wider">Sección 3</span>
+                <h3 class="text-2xl font-bold text-slate-900">El Sistema Genital Femenino</h3>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="space-y-3">
+                        <h4 class="font-bold text-slate-900 text-sm uppercase text-bio-600">Órganos Internos</h4>
+                        <ul class="text-sm space-y-2 text-slate-600">
+                            <li><strong>Ovarios:</strong> Gónadas femeninas. Liberan óvulos y secretan estrógenos y progesterona.</li>
+                            <li><strong>Trompas de Falopio:</strong> Conductos que comunican ovarios con el útero. Captan el ovocito liberado.</li>
+                            <li><strong>Útero:</strong> Órgano muscular hueco. Su pared interna vascularizada es el <strong>endometrio</strong>.</li>
+                            <li><strong>Vagina:</strong> Conducto muscular, canal de parto y receptáculo durante el coito.</li>
+                        </ul>
+                    </div>
+
+                    <div class="space-y-3">
+                        <h4 class="font-bold text-slate-900 text-sm uppercase text-bio-600">Órganos Externos (Vulva) y Mamas</h4>
+                        <ul class="text-sm space-y-2 text-slate-600">
+                            <li><strong>Labios Mayores y Menores:</strong> Pliegues protectores cutáneos.</li>
+                            <li><strong>Clítoris:</strong> Órgano cilíndrico eréctil muy sensible.</li>
+                            <li><strong>Mamas:</strong> Poseen tejido glandular para producir leche materna tras el nacimiento.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="p-4 bg-slate-100 rounded-xl space-y-2 text-xs text-slate-700">
+                    <strong class="text-slate-900 block text-sm">Ovogénesis:</strong> A diferencia de los hombres, las mujeres nacen con una cantidad fija de ovocitos primarios detenidos en folículos primordiales. En la pubertad, se reactivan y generalmente uno por mes completa su maduración a ovocito secundario.
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Ciclo Menstrual -->
+        <section id="ciclo-menstrual" class="scroll-mt-28 space-y-6">
+            <div class="border-b border-slate-200 pb-3">
+                <span class="text-bio-600 font-bold uppercase text-xs tracking-wider">Sección 4</span>
+                <h3 class="text-2xl font-bold text-slate-900">Ciclo Menstrual y Ovárico</h3>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+                <p class="text-sm text-slate-600 leading-relaxed">
+                    El ciclo menstrual dura en promedio <strong>28 días</strong>. Ocurre simultáneamente con el ciclo ovárico. A diferencia del ciclo estral de otros mamíferos, el sangrado se produce por la descamación del endometrio al no haber fecundación.
+                </p>
+
+                <!-- ILUSTRACIÓN 3: Esquema del Ciclo Menstrual Adaptativo (Sin cortes) -->
+                <figure class="bg-slate-50 p-6 rounded-xl border border-slate-200 text-center space-y-4">
+                    <!-- Barra Visual Progresiva del Ciclo -->
+                    <div class="w-full bg-slate-200 rounded-2xl overflow-hidden h-7 flex shadow-inner border border-slate-300">
+                        <div class="w-[18%] bg-red-500 text-white font-bold text-[10px] flex items-center justify-center">1-5</div>
+                        <div class="w-[32%] bg-blue-500 text-white font-bold text-[10px] flex items-center justify-center">6-13</div>
+                        <div class="w-[7%] bg-amber-400 text-slate-900 font-extrabold text-[10px] flex items-center justify-center">14</div>
+                        <div class="w-[43%] bg-emerald-600 text-white font-bold text-[10px] flex items-center justify-center">15-28</div>
+                    </div>
+
+                    <!-- Tarjetas de Información Desglosadas por Fase -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-left">
+                        <div class="bg-white p-3 rounded-xl border-l-4 border-red-500 shadow-2xs">
+                            <span class="text-[10px] uppercase font-bold text-red-600 block">Días 1 a 5</span>
+                            <strong class="text-xs text-slate-900 block font-bold">Menstruación</strong>
+                            <p class="text-[11px] text-slate-600 mt-1 leading-tight">Eliminación y descamación del tejido endometrial al no haber fecundación.</p>
+                        </div>
+
+                        <div class="bg-white p-3 rounded-xl border-l-4 border-blue-500 shadow-2xs">
+                            <span class="text-[10px] uppercase font-bold text-blue-600 block">Días 6 a 13</span>
+                            <strong class="text-xs text-slate-900 block font-bold">Fase Folicular</strong>
+                            <p class="text-[11px] text-slate-600 mt-1 leading-tight">Maduración del folículo y secreción de <strong>estrógenos</strong> (reconstrucción del endometrio).</p>
+                        </div>
+
+                        <div class="bg-white p-3 rounded-xl border-l-4 border-amber-400 shadow-2xs">
+                            <span class="text-[10px] uppercase font-bold text-amber-600 block">Día 14</span>
+                            <strong class="text-xs text-slate-900 block font-bold">Ovulación</strong>
+                            <p class="text-[11px] text-slate-600 mt-1 leading-tight">Ruptura del folículo maduro y liberación del ovocito secundario hacia la trompa.</p>
+                        </div>
+
+                        <div class="bg-white p-3 rounded-xl border-l-4 border-emerald-600 shadow-2xs">
+                            <span class="text-[10px] uppercase font-bold text-emerald-700 block">Días 15 a 28</span>
+                            <strong class="text-xs text-slate-900 block font-bold">Fase Lútea</strong>
+                            <p class="text-[11px] text-slate-600 mt-1 leading-tight">El cuerpo lúteo secreta <strong>progesterona y estrógenos</strong> preparando la matriz para el cigoto.</p>
+                        </div>
+                    </div>
+
+                    <figcaption class="text-xs text-slate-500 italic max-w-lg mx-auto">
+                        <strong>Figura 3. Fases del ciclo menstrual de 28 días:</strong> La menstruación (días 1 a 5), la fase folicular previa a la ovulación (día 14) y la preparación endometrial sostenida por el cuerpo lúteo hasta el día 28.
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- 5. Embarazo y Parto -->
+        <section id="embarazo-parto" class="scroll-mt-28 space-y-6">
+            <div class="border-b border-slate-200 pb-3">
+                <span class="text-bio-600 font-bold uppercase text-xs tracking-wider">Sección 5</span>
+                <h3 class="text-2xl font-bold text-slate-900">Fecundación, Desarrollo y Parto</h3>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+                <div class="space-y-3">
+                    <h4 class="font-bold text-slate-900 text-base">Etapas Iniciales del Embrión</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Tras la unión de gametos en la trompa de Falopio nace el <strong>cigoto</strong>. A las 48 hs posee 2-4 células; a las 72 hs forma la <strong>mórula</strong> (8 células); a los 4 días se convierte en <strong>blastocisto</strong> y a los 7 días se implanta en el endometrio (<strong>nidación</strong>), produciendo la hormona <strong>hCG</strong> (Gonadotropina Coriónica Humana) que inhibe la menstruación.
+                    </p>
+                </div>
+
+                <!-- ILUSTRACIÓN 4: Trayecto Fecundación e Implantación (Sin cortes) -->
+                <figure class="bg-slate-50 p-6 rounded-xl border border-slate-200 text-center space-y-4">
+                    <!-- Secuencia Visual del Embrión -->
+                    <div class="grid grid-cols-1 sm:grid-cols-5 gap-2 text-left">
+                        <div class="bg-white p-3 rounded-xl border border-rose-200 text-center">
+                            <span class="w-7 h-7 rounded-full bg-rose-500 text-white font-bold text-xs flex items-center justify-center mx-auto mb-1">1</span>
+                            <strong class="text-xs text-slate-900 block">Ovocito</strong>
+                            <p class="text-[10px] text-slate-500 mt-0.5">Liberado por el ovario</p>
+                        </div>
+
+                        <div class="bg-white p-3 rounded-xl border border-purple-200 text-center">
+                            <span class="w-7 h-7 rounded-full bg-purple-500 text-white font-bold text-xs flex items-center justify-center mx-auto mb-1">2</span>
+                            <strong class="text-xs text-slate-900 block">Cigoto</strong>
+                            <p class="text-[10px] text-slate-500 mt-0.5">Fecundación (Unión)</p>
+                        </div>
+
+                        <div class="bg-white p-3 rounded-xl border border-blue-200 text-center">
+                            <span class="w-7 h-7 rounded-full bg-blue-500 text-white font-bold text-xs flex items-center justify-center mx-auto mb-1">3</span>
+                            <strong class="text-xs text-slate-900 block">Mórula</strong>
+                            <p class="text-[10px] text-slate-500 mt-0.5">8 células (72 horas)</p>
+                        </div>
+
+                        <div class="bg-white p-3 rounded-xl border border-emerald-200 text-center">
+                            <span class="w-7 h-7 rounded-full bg-emerald-500 text-white font-bold text-xs flex items-center justify-center mx-auto mb-1">4</span>
+                            <strong class="text-xs text-slate-900 block">Blastocisto</strong>
+                            <p class="text-[10px] text-slate-500 mt-0.5">Esfera hueca (4 días)</p>
+                        </div>
+
+                        <div class="bg-white p-3 rounded-xl border border-amber-200 text-center">
+                            <span class="w-7 h-7 rounded-full bg-amber-500 text-white font-bold text-xs flex items-center justify-center mx-auto mb-1">5</span>
+                            <strong class="text-xs text-slate-900 block">Nidación</strong>
+                            <p class="text-[10px] text-slate-500 mt-0.5">Implantación (7 días)</p>
+                        </div>
+                    </div>
+
+                    <figcaption class="text-xs text-slate-500 italic max-w-lg mx-auto">
+                        <strong>Figura 4. Recorrido del embrión:</strong> Desde la fecundación en la trompa de Falopio hasta la nidación del blastocisto en la pared uterina al séptimo día.
+                    </figcaption>
+                </figure>
+
+                <!-- Desarrollo Gestacional Mes a Mes -->
+                <div class="space-y-4 pt-4 border-t border-slate-200">
+                    <h4 class="font-bold text-slate-900 text-base">Desarrollo Gestacional Mes a Mes</h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                            <span class="text-xs font-bold text-bio-600 block mb-1">1.er Mes</span>
+                            <p class="text-xs text-slate-600">El corazón comienza a latir. El embrión mide aproximadamente 5 mm.</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                            <span class="text-xs font-bold text-bio-600 block mb-1">2.º Mes</span>
+                            <p class="text-xs text-slate-600">Se diferencian extremidades y genitales. Inicia la formación del sistema nervioso.</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                            <span class="text-xs font-bold text-bio-600 block mb-1">3.er Mes</span>
+                            <p class="text-xs text-slate-600">Pasa a denominarse <strong>feto</strong> (mide ~10 cm). Se distingue la cabeza y extremidades formadas.</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                            <span class="text-xs font-bold text-bio-600 block mb-1">4.º Mes</span>
+                            <p class="text-xs text-slate-600">Mide ~15 cm. Comienza a cubrirse con pelo fino (lanugo).</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                            <span class="text-xs font-bold text-bio-600 block mb-1">5.º Mes</span>
+                            <p class="text-xs text-slate-600">Mide ~20 cm. La madre puede sentir activamente los movimientos dentro del útero.</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                            <span class="text-xs font-bold text-bio-600 block mb-1">6.º Mes</span>
+                            <p class="text-xs text-slate-600">Mide ~25 cm. Todos los órganos ya se encuentran internamente formados.</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                            <span class="text-xs font-bold text-bio-600 block mb-1">7.º Mes</span>
+                            <p class="text-xs text-slate-600">Mide ~30 cm. Abre los párpados e inicia la circulación pulmonar.</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                            <span class="text-xs font-bold text-bio-600 block mb-1">8.º Mes</span>
+                            <p class="text-xs text-slate-600">Mide ~35 cm. Pierde la pelusa del cuerpo y comienza a acumular grasa subcutánea.</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                            <span class="text-xs font-bold text-bio-600 block mb-1">9.º Mes</span>
+                            <p class="text-xs text-slate-600">Mide ~40 a 50 cm. Acumula grasa suficiente y se mueve notablemente listo para nacer.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ILUSTRACIÓN COMPARATIVA: Embrión inicial vs Feto a los 9 meses -->
+                <div class="space-y-4 pt-6 border-t border-slate-200">
+                    <h4 class="font-bold text-slate-900 text-base flex items-center gap-2">
+                        <i class="fa-solid fa-[#16a34a] fa-code-compare text-bio-600"></i>
+                        Comparación Anatómica del Crecimiento Prenatal
+                    </h4>
+                    <figure class="bg-slate-50 p-6 rounded-xl border border-slate-200 text-center space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
+                            <!-- Tarjeta Embrión Inicial -->
+                            <div class="bg-white p-4 rounded-xl border border-bio-200 space-y-3">
+                                <div class="flex items-center gap-2 text-bio-800 font-bold text-xs border-b border-slate-100 pb-2">
+                                    <span class="w-3 h-3 rounded-full bg-bio-500 inline-block"></span>
+                                    Embrión Inicial (1.er Mes)
+                                </div>
+                                <div class="svg-container py-2">
+                                    <svg viewBox="0 0 160 140" class="w-full max-w-[160px] h-auto mx-auto">
+                                        <!-- Formita del embrión de 5 mm -->
+                                        <path d="M 60 40 C 90 30, 110 60, 95 90 C 85 110, 60 105, 55 90 C 50 80, 70 75, 65 60 Z" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+                                        <!-- Corazón latiendo -->
+                                        <circle cx="75" cy="65" r="6" fill="#ef4444"/>
+                                        <line x1="75" y1="65" x2="115" y2="35" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="2,2"/>
+                                        <text x="120" y="35" text-anchor="start" font-size="9" font-weight="bold" fill="#dc2626">Corazón (~5mm)</text>
+                                    </svg>
+                                </div>
+                                <p class="text-[11px] text-slate-600 leading-tight">
+                                    Mide apenas unos <strong>5 mm</strong>. Posee forma encorvada rudimentaria y su corazón recién empieza a latir.
+                                </p>
+                            </div>
+
+                            <!-- Tarjeta Feto a los 9 Meses (Mejorado y Anatómico) -->
+                            <div class="bg-white p-4 rounded-xl border border-bio-200 space-y-3">
+                                <div class="flex items-center gap-2 text-bio-800 font-bold text-xs border-b border-slate-100 pb-2">
+                                    <span class="w-3 h-3 rounded-full bg-bio-700 inline-block"></span>
+                                    Feto Completamente Desarrollado (9.º Mes)
+                                </div>
+                                <div class="svg-container py-2">
+                                    <svg viewBox="0 0 220 190" class="w-full max-w-[210px] h-auto mx-auto">
+                                        <defs>
+                                            <linearGradient id="babySkin" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stop-color="#fed7aa" />
+                                                <stop offset="50%" stop-color="#fdba74" />
+                                                <stop offset="100%" stop-color="#fb923c" />
+                                            </linearGradient>
+                                            <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+                                                <feDropShadow dx="1" dy="2" stdDeviation="2" flood-opacity="0.15"/>
+                                            </filter>
+                                        </defs>
+                                        <!-- Pared Uterina y Bolsa Amniótica -->
+                                        <path d="M 25 95 C 25 15, 195 15, 195 95 C 195 175, 25 175, 25 95 Z" fill="#fff1f2" stroke="#fda4af" stroke-width="3.5" stroke-dasharray="4,4"/>
+                                        <text x="110" y="24" text-anchor="middle" font-size="8.5" font-weight="bold" fill="#e11d48">ÚTERO MATERNO</text>
+
+                                        <!-- Placenta superior-lateral -->
+                                        <path d="M 140 30 C 175 35, 185 70, 180 100" fill="none" stroke="#be123c" stroke-width="12" stroke-linecap="round"/>
+                                        <text x="178" y="55" text-anchor="start" font-size="7.5" font-weight="bold" fill="#9f1239">Placenta</text>
+
+                                        <!-- Feto Anatómico Completo (En posición de cefálica hacia abajo) -->
+                                        <g transform="translate(10, 0)" filter="url(#softShadow)">
+                                            <!-- Torso y Espalda curvada -->
+                                            <path d="M 90 48 C 62 45, 52 75, 60 110 C 65 132, 82 148, 102 150" fill="none" stroke="url(#babySkin)" stroke-width="32" stroke-linecap="round"/>
+
+                                            <!-- Cabeza del Bebé (Encajada abajo) -->
+                                            <circle cx="116" cy="138" r="23" fill="url(#babySkin)"/>
+                                            
+                                            <!-- Detalles Rostro del Bebé -->
+                                            <!-- Frente y Nariz bien perfiladas -->
+                                            <path d="M 132 130 C 137 134, 137 138, 133 141 C 135 143, 133 147, 127 148 C 122 149, 117 152, 110 152" fill="none" stroke="#ea580c" stroke-width="2" stroke-linecap="round"/>
+                                            <!-- Ojo durmiendo (párpado y pestañitas) -->
+                                            <path d="M 123 133 C 125 136, 128 136, 129 133" fill="none" stroke="#c2410c" stroke-width="1.8"/>
+                                            <!-- Orejita redondeada -->
+                                            <path d="M 108 134 C 104 133, 103 139, 107 141" fill="none" stroke="#c2410c" stroke-width="1.5"/>
+
+                                            <!-- Brazo flexionado hacia la carita -->
+                                            <path d="M 88 82 C 102 90, 116 108, 121 125" fill="none" stroke="url(#babySkin)" stroke-width="12" stroke-linecap="round"/>
+                                            <circle cx="121" cy="125" r="5" fill="#fdba74"/>
+
+                                            <!-- Pierna y Muslito encogido arriba -->
+                                            <path d="M 72 110 C 62 90, 78 62, 98 64 C 112 65, 112 80, 100 92" fill="none" stroke="url(#babySkin)" stroke-width="14" stroke-linecap="round"/>
+                                            <!-- Piecito articulado con deditos -->
+                                            <ellipse cx="102" cy="62" rx="7" ry="4" fill="#fdba74" transform="rotate(-15 102 62)"/>
+
+                                            <!-- Cordón Umbilical en espiral -->
+                                            <path d="M 88 102 C 108 95, 118 78, 142 82 C 154 84, 160 92, 168 85" fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <p class="text-[11px] text-slate-600 leading-tight">
+                                    Mide aproximadamente <strong>45 a 50 cm</strong>. Se ubica flexionado en posición cefálica (cabeza orientada al cuello uterino) listo para el parto.
+                                </p>
+                            </div>
+                        </div>
+
+                        <figcaption class="text-xs text-slate-500 italic max-w-lg mx-auto">
+                            <strong>Figura 5. Comparativa del desarrollo prenatal:</strong> Contraste evolutivo entre la etapa embrionaria inicial (1.er mes) y el feto a término (9.º mes) en posición fetal cefálica dentro del útero.
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <!-- El Parto y Cuidados -->
+                <div class="bg-bio-50 p-6 rounded-2xl border border-bio-200 space-y-4">
+                    <h4 class="font-bold text-bio-900 text-base">El Parto y los Cuidados</h4>
+                    <p class="text-sm text-slate-700 leading-relaxed">
+                        El parto ocurre por contracciones uterinas rítmicas. Debido al canal de parto estrecho humano, puede requerirse una <strong>cesárea</strong> quirúrgica. Tras el nacimiento, se corta el cordón umbilical y se produce el alumbramiento (expulsión de la placenta). Durante el embarazo, el control obstétrico periódico incluye <strong>ecografías</strong> mensuales inocuas.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. ITS y Salud -->
+        <section id="salud-its" class="scroll-mt-28 space-y-6">
+            <div class="border-b border-slate-200 pb-3">
+                <span class="text-bio-600 font-bold uppercase text-xs tracking-wider">Sección 6</span>
+                <h3 class="text-2xl font-bold text-slate-900">Infecciones de Transmisión Sexual (ITS) y Salud</h3>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+                <p class="text-sm text-slate-600 leading-relaxed">
+                    Las ITS son infecciones transmitidas durante el contacto sexual (genital, anal u oral). Son causadas por virus, bacterias u hongos y afectan a personas de todas las edades.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="p-5 bg-slate-50 rounded-xl space-y-3 border border-slate-200">
+                        <span class="font-bold text-red-700 text-sm flex items-center gap-2">
+                            <i class="fa-solid fa-virus"></i> Infecciones Virales (VIH y VPH)
+                        </span>
+                        <ul class="text-xs text-slate-600 space-y-2">
+                            <li><strong>VIH / Sida:</strong> Ataca los linfocitos T del sistema inmunitario. Se transmite por vía sexual, sanguínea o perinatal. No tiene cura, pero se controla con antirretrovirales.</li>
+                            <li><strong>VPH (Virus del Papiloma Humano):</strong> Causa verrugas genitales y puede derivar en cáncer de cuello uterino. Existe vacuna preventiva obligatoria a los 11 años.</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-5 bg-slate-50 rounded-xl space-y-3 border border-slate-200">
+                        <span class="font-bold text-amber-700 text-sm flex items-center gap-2">
+                            <i class="fa-solid fa-bacteria"></i> Infecciones Bacterianas (Sífilis y Gonorrea)
+                        </span>
+                        <ul class="text-xs text-slate-600 space-y-2">
+                            <li><strong>Sífilis:</strong> Causada por <em>Treponema pallidum</em>. Inicia con una llaga (chancro) indolora y se trata eficazmente con penicilina.</li>
+                            <li><strong>Gonorrea:</strong> Causada por <em>Neisseria gonorrhoeae</em>. Provoca ardor al orinar y secreciones, tratable con antibióticos específicos.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="p-4 bg-bio-50 border border-bio-200 rounded-xl space-y-2">
+                    <strong class="text-bio-900 text-sm block"><i class="fa-solid fa-shield-halved mr-1"></i> Prevención y Métodos Anticonceptivos</strong>
+                    <p class="text-xs text-slate-700 leading-relaxed">
+                        El <strong>preservativo</strong> (masculino y femenino) es el <em>único método anticonceptivo</em> que previene eficazmente las ITS al actuar como barrera física contra fluidos y lesiones. Otros métodos evitan embarazos pero no infecciones:
+                    </p>
+                    <ul class="text-xs text-slate-700 space-y-1 list-disc list-inside mt-1">
+                        <li><strong>Hormonales / Químicos:</strong> Pastillas, inyecciones, parches y DIU (dispositivo intrauterino). Impiden la ovulación o fecundación.</li>
+                        <li><strong>De Barrera:</strong> Preservativos y diafragma con espermicidas.</li>
+                        <li><strong>Quirúrgicos:</strong> Ligadura de trompas y vasectomía (generalmente definitivos).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Reproducción Asistida -->
+        <section id="asistida" class="scroll-mt-28 space-y-6">
+            <div class="border-b border-slate-200 pb-3">
+                <span class="text-bio-600 font-bold uppercase text-xs tracking-wider">Sección 7</span>
+                <h3 class="text-2xl font-bold text-slate-900">Técnicas de Reproducción Asistida</h3>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+                <p class="text-sm text-slate-600 leading-relaxed">
+                    Cuando existen dificultades biológicas o infertilidad (baja movilidad espermática, bloqueo de vías, anovulación), la medicina ofrece diversas técnicas de apoyo:
+                </p>
+                <div class="grid md:grid-cols-3 gap-4 text-xs">
+                    <div class="p-4 bg-slate-50 rounded-xl space-y-2 border border-slate-200">
+                        <strong class="text-slate-900 block text-sm">Estimulación Ovárica</strong>
+                        <p class="text-slate-600">Inyección de hormonas para favorecer y desencadenar la ovulación en mujeres con dificultades.</p>
+                    </div>
+                    <div class="p-4 bg-slate-50 rounded-xl space-y-2 border border-slate-200">
+                        <strong class="text-slate-900 block text-sm">Inseminación Artificial</strong>
+                        <p class="text-slate-600">Introducción de semen preparado directamente en el interior del útero mediante un dispositivo especial.</p>
+                    </div>
+                    <div class="p-4 bg-slate-50 rounded-xl space-y-2 border border-slate-200">
+                        <strong class="text-slate-900 block text-sm">Fecundación in vitro (FIV)</strong>
+                        <p class="text-slate-600">Fecundación de ovocitos y espermatozoides en placas de cultivo de laboratorio; el embrión viable se transfiere al útero.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Sistema de 3 Cuestionarios Adaptativos Interactivos -->
+        <section id="cuestionarios" class="scroll-mt-28 space-y-6">
+            <div class="border-b border-slate-200 pb-3 flex justify-between items-center flex-wrap gap-2">
+                <div>
+                    <span class="text-bio-600 font-bold uppercase text-xs tracking-wider">Sección 8</span>
+                    <h3 class="text-2xl font-bold text-slate-900">Cuestionario Adaptativo Interactivos</h3>
+                </div>
+                <button onclick="resetAllQuizzes()" class="px-3 py-1.5 bg-slate-200 hover:bg-slate-300 text-slate-700 text-xs font-semibold rounded-lg transition-colors flex items-center gap-1.5">
+                    <i class="fa-solid fa-rotate-right"></i> Reiniciar Cuestionarios
+                </button>
+            </div>
+
+            <div class="bg-white p-6 md:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+                <p class="text-sm text-slate-600">
+                    Pon a prueba tus conocimientos sobre la unidad. El sistema adaptativo evaluará tu respuesta: si aciertas, avanzarás a un nivel superior; si fallas, recibirás una explicación detallada y podrás reintentar.
+                </p>
+
+                <!-- CONTENEDOR DE CUESTIONARIOS -->
+                <div id="quiz-container" class="space-y-6">
+                    <!-- Nivel 1: Básico -->
+                    <div id="quiz-level-1" class="quiz-card p-6 bg-slate-50 rounded-2xl border border-slate-200 space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="px-3 py-1 bg-bio-100 text-bio-800 text-xs font-bold rounded-full">Nivel 1: Básico</span>
+                            <span class="text-xs text-slate-500 font-medium">Pregunta 1 de 3</span>
+                        </div>
+                        <h4 class="font-bold text-slate-900 text-base">¿Cuál es el grupo de mamíferos al cual pertenecemos los seres humanos en relación con la conexión embrionaria?</h4>
+                        <div id="options-1" class="grid gap-3">
+                            <button onclick="checkAnswer(1, 0)" class="option-btn text-left p-3.5 rounded-xl border border-slate-200 bg-white hover:bg-bio-50 hover:border-bio-300 text-sm font-medium transition-all">A) Marsupiales (crías en bolsa externa)</button>
+                            <button onclick="checkAnswer(1, 1)" class="option-btn text-left p-3.5 rounded-xl border border-slate-200 bg-white hover:bg-bio-50 hover:border-bio-300 text-sm font-medium transition-all">B) Placentarios (embrión conectado a una placenta)</button>
+                            <button onclick="checkAnswer(1, 2)" class="option-btn text-left p-3.5 rounded-xl border border-slate-200 bg-white hover:bg-bio-50 hover:border-bio-300 text-sm font-medium transition-all">C) Monotremas (mamíferos ovíparos)</button>
+                        </div>
+                        <div id="feedback-1" class="hidden p-4 rounded-xl text-xs leading-relaxed"></div>
+                    </div>
+
+                    <!-- Nivel 2A: Intermedio Avanzado (Si acierta Niv 1) -->
+                    <div id="quiz-level-2a" class="quiz-card hidden p-6 bg-emerald-50/60 rounded-2xl border border-emerald-200 space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="px-3 py-1 bg-emerald-200 text-emerald-900 text-xs font-bold rounded-full">Nivel 2A: Intermedio (Avanzado)</span>
+                            <span class="text-xs text-emerald-700 font-medium">¡Respondiste bien! Siguiente nivel</span>
+                        </div>
+                        <h4 class="font-bold text-slate-900 text-base">¿En qué estructura exacta del sistema genital masculino maduran los espermatozoides y adquieren movilidad?</h4>
+                        <div id="options-2a" class="grid gap-3">
+                            <button onclick="checkAnswer('2a', 0)" class="option-btn text-left p-3.5 rounded-xl border border-slate-200 bg-white hover:bg-emerald-50 hover:border-emerald-300 text-sm font-medium transition-all">A) En la próstata</button>
+                            <button onclick="checkAnswer('2a', 1)" class="option-btn text-left p-3.5 rounded-xl border border-slate-200 bg-white hover:bg-emerald-50 hover:border-emerald-300 text-sm font-medium transition-all">B) En los túbulos seminíferos</button>
+                            <button onclick="checkAnswer('2a', 2)" class="option-btn text-left p-3.5 rounded-xl border border-emerald-300 bg-white hover:bg-emerald-50 hover:border-emerald-300 text-sm font-medium transition-all">C) En el epidídimo</button>
+                        </div>
+                        <div id="feedback-2a" class="hidden p-4 rounded-xl text-xs leading-relaxed"></div>
+                    </div>
+
+                    <!-- Nivel 2B: Refuerzo (Si falla Niv 1) -->
+                    <div id="quiz-level-2b" class="quiz-card hidden p-6 bg-amber-50/60 rounded-2xl border border-amber-200 space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="px-3 py-1 bg-amber-200 text-amber-900 text-xs font-bold rounded-full">Nivel 2B: Refuerzo y Repaso</span>
+                            <span class="text-xs text-amber-800 font-medium">Analicemos el concepto</span>
+                        </div>
+                        <h4 class="font-bold text-slate-900 text-base">¿Qué función cumple principalmente la placenta durante el desarrollo embrionario humano?</h4>
+                        <div id="options-2b" class="grid gap-3">
+                            <button onclick="checkAnswer('2b', 0)" class="option-btn text-left p-3.5 rounded-xl border border-slate-200 bg-white hover:bg-amber-50 hover:border-amber-300 text-sm font-medium transition-all">A) Permitir al embrión recibir nutrientes y oxígeno de la madre y eliminar desechos</button>
+                            <button onclick="checkAnswer('2b', 1)" class="option-btn text-left p-3.5 rounded-xl border border-slate-200 bg-white hover:bg-amber-50 hover:border-amber-300 text-sm font-medium transition-all">B) Secretar leche materna antes del nacimiento</button>
+                            <button onclick="checkAnswer('2b', 2)" class="option-btn text-left p-3.5 rounded-xl border border-slate-200 bg-white hover:bg-amber-50 hover:border-amber-300 text-sm font-medium transition-all">C) Proteger al embrión exclusivamente contra golpes mecánicos</button>
+                        </div>
+                        <div id="feedback-2b" class="hidden p-4 rounded-xl text-xs leading-relaxed"></div>
+                    </div>
+
+                    <!-- Nivel 3A: Experto (Si acierta 2A) -->
+                    <div id="quiz-level-3a" class="quiz-card hidden p-6 bg-bio-50 rounded-2xl border border-bio-300 space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="px-3 py-1 bg-bio-600 text-white text-xs font-bold rounded-full">Nivel 3A: Experto (Final)</span>
+                            <span class="text-xs text-bio-800 font-medium">¡Excelente desempeño!</span>
+                        </div>
+                        <h4 class="font-bold text-slate-900 text-base">¿Qué hormona detectan principalmente los test de embarazo farmacéuticos en la orina tras la implantación del blastocisto?</h4>
+                        <div id="options-3a" class="grid gap-3">
+                            <button onclick="checkAnswer('3a', 0)" class="option-btn text-left p-3.5 rounded-xl border border-slate-200 bg-white hover:bg-bio-100 text-sm font-medium transition-all">A) Testosterona</button>
+                            <button onclick="checkAnswer('3a', 1)" class="option-btn text-left p-3.5 rounded-xl border border-slate-200 bg-white hover:bg-bio-100 text-sm font-medium transition-all">B) Gonadotropina Coriónica Humana (hCG)</button>
+                            <button onclick="checkAnswer('3a', 2)" class="option-btn text-left p-3.5 rounded-xl border border-slate-200 bg-white hover:bg-bio-100 text-sm font-medium transition-all">C) Progesterona pura</button>
+                        </div>
+                        <div id="feedback-3a" class="hidden p-4 rounded-xl text-xs leading-relaxed"></div>
+                    </div>
+
+                    <!-- Nivel 3B: Refuerzo Avanzado (Si falla 2A o 2B) -->
+                    <div id="quiz-level-3b" class="quiz-card hidden p-6 bg-sky-50 rounded-2xl border border-sky-200 space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="px-3 py-1 bg-sky-200 text-sky-900 text-xs font-bold rounded-full">Nivel 3B: Consolidación</span>
+                            <span class="text-xs text-sky-800 font-medium">Repaso integral</span>
+                        </div>
+                        <h4 class="font-bold text-slate-900 text-base">¿Cuál es el único método anticonceptivo que previene eficazmente las Infecciones de Transmisión Sexual (ITS)?</h4>
+                        <div id="options-3b" class="grid gap-3">
+                            <button onclick="checkAnswer('3b', 0)" class="option-btn text-left p-3.5 rounded-xl border border-slate-200 bg-white hover:bg-sky-100 text-sm font-medium transition-all">A) Las pastillas anticonceptivas hormonales</button>
+                            <button onclick="checkAnswer('3b', 1)" class="option-btn text-left p-3.5 rounded-xl border border-slate-200 bg-white hover:bg-sky-100 text-sm font-medium transition-all">B) El dispositivo intrauterino (DIU)</button>
+                            <button onclick="checkAnswer('3b', 2)" class="option-btn text-left p-3.5 rounded-xl border border-slate-200 bg-white hover:bg-sky-100 text-sm font-medium transition-all">C) El preservativo (masculino y femenino)</button>
+                        </div>
+                        <div id="feedback-3b" class="hidden p-4 rounded-xl text-xs leading-relaxed"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Escolar -->
+    <footer class="bg-white border-t border-slate-200 py-8 px-4 mt-16">
+        <div class="max-w-5xl mx-auto text-center space-y-3">
+            <p class="text-xs text-slate-500 font-medium">
+                Material de estudio correspondiente a Biología y Ciencias Naturales • Profesor: <strong>Ricardo Naín</strong>
+            </p>
+            <p class="text-[11px] text-slate-400">
+                Basado en contenidos curriculares de anatomía, fisiología, evolución y salud reproductiva humana.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Script de lógica adaptativa de cuestionarios -->
+    <script>
+        function checkAnswer(level, selectedIndex) {
+            let correctIndex = 1; // Por defecto
+            let feedbackId = '';
+            let nextLevelId = '';
+            let failLevelId = '';
+
+            if (level === 1) {
+                correctIndex = 1; // B) Placentarios
+                feedbackId = 'feedback-1';
+                nextLevelId = 'quiz-level-2a';
+                failLevelId = 'quiz-level-2b';
+            } else if (level === '2a') {
+                correctIndex = 2; // C) En el epidídimo
+                feedbackId = 'feedback-2a';
+                nextLevelId = 'quiz-level-3a';
+                failLevelId = 'quiz-level-3b';
+            } else if (level === '2b') {
+                correctIndex = 0; // A) Recibir nutrientes y oxígeno
+                feedbackId = 'feedback-2b';
+                nextLevelId = 'quiz-level-3a';
+                failLevelId = 'quiz-level-3b';
+            } else if (level === '3a') {
+                correctIndex = 1; // B) hCG
+                feedbackId = 'feedback-3a';
+            } else if (level === '3b') {
+                correctIndex = 2; // C) Preservativo
+                feedbackId = 'feedback-3b';
+            }
+
+            const feedbackEl = document.getElementById(feedbackId);
+            feedbackEl.classList.remove('hidden');
+
+            const isCorrect = (selectedIndex === correctIndex);
+
+            if (isCorrect) {
+                feedbackEl.className = "p-4 rounded-xl text-xs leading-relaxed bg-emerald-100 text-emerald-900 border border-emerald-300 font-medium";
+                feedbackEl.innerHTML = `<i class="fa-solid fa-circle-check text-emerald-600 mr-1 text-sm"></i> <strong>¡Respuesta correcta!</strong> Has seleccionado la opción adecuada. El conocimiento está afianzado.`;
+                
+                // Ocultar opciones de este nivel para bloquear cambios
+                const optContainer = document.getElementById(`options-${level}`);
+                if (optContainer) {
+                    Array.from(optContainer.children).forEach((btn, idx) => {
+                        btn.disabled = true;
+                        if (idx === correctIndex) {
+                            btn.classList.add('bg-emerald-100', 'border-emerald-500', 'font-bold');
+                        } else {
+                            btn.classList.add('opacity-50');
+                        }
+                    });
+                }
+
+                // Mostrar siguiente nivel si existe
+                if (nextLevelId) {
+                    setTimeout(() => {
+                        document.getElementById(nextLevelId).classList.remove('hidden');
+                        document.getElementById(nextLevelId).scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    }, 600);
+                }
+            } else {
+                feedbackEl.className = "p-4 rounded-xl text-xs leading-relaxed bg-red-100 text-red-900 border border-red-300 font-medium";
+                feedbackEl.innerHTML = `<i class="fa-solid fa-triangle-exclamation text-red-600 mr-1 text-sm"></i> <strong>Respuesta incorrecta.</strong> Marcaste una opción errónea. La respuesta correcta era la opción <strong>${String.fromCharCode(65 + correctIndex)}</strong>. <em>Esto sucede porque en la teoría estudiada este proceso cumple una función específica diferente.</em> Te sugerimos repasar el apartado correspondiente de la lección.`;
+
+                const optContainer = document.getElementById(`options-${level}`);
+                if (optContainer) {
+                    Array.from(optContainer.children).forEach((btn, idx) => {
+                        btn.disabled = true;
+                        if (idx === correctIndex) {
+                            btn.classList.add('bg-emerald-100', 'border-emerald-500', 'font-bold');
+                        } else if (idx === selectedIndex) {
+                            btn.classList.add('bg-red-100', 'border-red-400', 'line-through');
+                        } else {
+                            btn.classList.add('opacity-50');
+                        }
+                    });
+                }
+
+                // Activar nivel de refuerzo alternativo si falla
+                if (failLevelId) {
+                    setTimeout(() => {
+                        document.getElementById(failLevelId).classList.remove('hidden');
+                        document.getElementById(failLevelId).scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    }, 800);
+                }
+            }
+        }
+
+        function resetAllQuizzes() {
+            window.location.reload();
+        }
+    </script>
+</body>
+</html>
